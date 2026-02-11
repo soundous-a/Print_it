@@ -123,13 +123,22 @@ header {
 }
 /* Code CSS en prévision de l'ajout d'un carousel pour la bannière */
 /* Gestion des fleches du carrousel */
+#banner{
+	width: 100%;
+}
+
+.arrow {
+    position: absolute;    /* Sort l'image du flux normal pour la superposer */
+    cursor: pointer;      /* Change le curseur au survol */
+}
+
 #banner .arrow {
 	position: absolute;
 }
-#banner .arrow_left {
-	left: 10px;
+#arrow_left {
+ 	left: 10px;
 }
-#banner .arrow_right {
+#arrow_right {
 	right: 10px;
 }
 /* Gestion des points du carrousel */
@@ -145,7 +154,7 @@ header {
 	background-color: #ffffff00;
 	border: 3px solid #fff;
 	border-radius: 100%;
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .dot_selected {
 	background-color: #fff;
